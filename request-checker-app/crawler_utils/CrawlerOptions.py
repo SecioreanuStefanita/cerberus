@@ -10,5 +10,4 @@ class CrawlerOptions(Enum):
     LFI = 8
     PP = 9
     CMDI = 10
-    ALL = 11
     

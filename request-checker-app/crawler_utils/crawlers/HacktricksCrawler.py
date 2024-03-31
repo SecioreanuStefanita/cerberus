@@ -2,6 +2,7 @@ from ..Crawler import Crawler
 from ..CrawlerOptions import CrawlerOptions
 
 class HacktricksCrawler(Crawler):
+    
     def crawl(self, option):
         match option:
             case CrawlerOptions.XSS:
@@ -24,8 +25,6 @@ class HacktricksCrawler(Crawler):
                 print("Crawling for PP")
             case CrawlerOptions.CMDI:
                 print("Crawling for CMDI")
-            case CrawlerOptions.ALL:
-                print("Crawling for ALL")
     def map(self):
         pass
     def cron(self):
