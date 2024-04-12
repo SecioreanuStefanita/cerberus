@@ -22,8 +22,7 @@ class RedisConnection( metaclass=Singleton):
     
     @staticmethod
     def set_connection():
-        RedisConnection.r = redis.Redis(host='REDIS_HOST', port=6379, db=0)
+        RedisConnection.r = redis.Redis(host='127.0.0.1', port=6379, db=0)
         data = {option.name: [] for option in CrawlerOptions}
-        print(data)
         RedisConnection.r .set('payloads', msgpack.packb(data)) # type: ignore
         return RedisConnection.r

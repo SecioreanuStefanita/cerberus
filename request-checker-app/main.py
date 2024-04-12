@@ -13,5 +13,5 @@ if(redis_client == None):
 @app.get("/")
 def root():
     f = PoatfCrawlerFactory()
-    response = f.create_crawler().crawl(1)
+    response = f.create_crawler().cron()
     return {"message": response}
