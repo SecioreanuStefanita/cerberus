@@ -20,5 +20,11 @@ class CrawlerService:
             redis_data = msgpack.unpackb(redis_client.get(f'payloads'))
             redis_data[option.name] = existing_data
             redis_client.set(f'payloads', msgpack.packb(redis_data)) # type: ignore
-        
+    
+    @staticmethod
+    def count_payload_sizes():
+        redis_client = RedisConnection.get_connection()
+        existing_data = msgpack.unpackb(redis_client.get(f'payloads'))
+        for data in existing_data:
+            print(f'got for {data} -> {len(existing_data[data])} payloads\n')
         

@@ -6,3 +6,4 @@ gunicorn
 requests
 bs4
 msgpack
+schedule
