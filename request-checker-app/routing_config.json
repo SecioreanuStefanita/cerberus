@@ -1,0 +1,4 @@
+{
+    "insomnia.local": "http://localhost:1337",
+    "/webapp2/*": "http://localhost:8001"
+}
