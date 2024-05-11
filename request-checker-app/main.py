@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request, HTTPException
+from fastapi import FastAPI, Request, HTTPException, Response
 import json
 from fastapi.concurrency import asynccontextmanager
 from fastapi.responses import JSONResponse, StreamingResponse
@@ -6,6 +6,7 @@ from .crawler_utils.CrawlerCreator import populate_payloads
 from .utils.RedisConnection import RedisConnection
 from .crawler_utils.CrawlerService import CrawlerService
 from fastapi_utilities import repeat_every
+from .services.CheckerService import CheckerService
 import httpx 
 
 redis_client = RedisConnection.get_connection()
@@ -14,9 +15,13 @@ if(redis_client == None):
     redis_client = RedisConnection.set_connection()
 
 
-@repeat_every(seconds=7*60*24)
+@repeat_every(seconds=7*60*60*24)
 async def cron_payloads() -> None:
     await populate_payloads(is_on_startup=False)
+    
+@repeat_every(seconds=60*60*24)
+async def cron_reset_caches() -> None:
+    RedisConnection.reset_request_cache()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -39,16 +44,17 @@ async def route_middleware(request: Request, call_next):
         if url.startswith(route): # type: ignore
             destination = dest
             break
-
+    is_safe_request = await CheckerService.check_request(destination, path, request.headers,await request.body(), redis_client)
     if destination:
-        async with httpx.AsyncClient() as client:
-            req = client.build_request(request.method, f"{destination}{path}", content=await request.body(), headers=dict(request.headers))
-            resp = await client.send(req, stream=True)
-
-            # Create a FastAPI response from the HTTPX response
-            return StreamingResponse(resp.aiter_raw(), status_code=resp.status_code, headers=dict(resp.headers))
+        if is_safe_request:
+            async with httpx.AsyncClient() as client:
+                req = client.build_request(request.method, f"{destination}{path}", content=await request.body(), headers=dict(request.headers))
+                resp = await client.send(req, stream=True)
+                return StreamingResponse(resp.aiter_raw(), status_code=resp.status_code, headers=dict(resp.headers))
+        else:
+            return JSONResponse(status_code=418, content={'UNDER CONSTRUCTION /  SEND TO HONEYPOT'})
     else:
-        return JSONResponse(status_code=412, content={}) 
+        return JSONResponse(status_code=404, content={'Content Not Found for the specified request'})
 
 
 

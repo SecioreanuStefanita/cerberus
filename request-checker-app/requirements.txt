@@ -8,4 +8,5 @@ bs4
 msgpack
 schedule
 fastapi_utilities
-httpx 
+httpx
+asyncio
