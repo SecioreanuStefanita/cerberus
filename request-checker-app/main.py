@@ -38,7 +38,6 @@ with open("request-checker-app/routing_config.json", "r") as config_file:
 async def route_middleware(request: Request, call_next):
     url = request.url.hostname
     path: str = request.url.path
-    # Find matching route in configuration
     destination = None
     for route, dest in routing_config.items():
         if url.startswith(route): # type: ignore
