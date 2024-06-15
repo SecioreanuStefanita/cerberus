@@ -10,3 +10,5 @@ schedule
 fastapi_utilities
 httpx
 asyncio
+python-multipart
+flask_cors

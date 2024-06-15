@@ -1,0 +1,1 @@
+* * * * * root /app/check_logs.sh

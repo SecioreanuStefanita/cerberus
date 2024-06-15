@@ -7,7 +7,7 @@ class CacheService:
     
     @staticmethod
     async def check_cache_component(hash_key, component_type, cached_requests):
-        return hash_key.hexdigest() in cached_requests[component_type]
+        return hash_key in cached_requests[component_type]
 
     @staticmethod
     async def check_cache_request(url, path, headers, body, redis_client):
@@ -40,5 +40,5 @@ class CacheService:
     @staticmethod
     def save_cache_component(component_string, request_component, redis_client):
         cached_requests = msgpack.unpackb(redis_client.get('request_hashes'))
-        cached_requests[request_component].extend(hashlib.md5(component_string.encode()).hexdigest())
+        cached_requests[request_component].append(hashlib.md5(component_string.encode()).hexdigest())
         redis_client.set(f'request_hashes', msgpack.packb(cached_requests)) # type: ignore

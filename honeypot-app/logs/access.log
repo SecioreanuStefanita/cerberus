@@ -1,0 +1,341 @@
+INFO:app:Attempting to delete config file...
+INFO:app:Config file removed successfully
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1338
+ * Running on http://172.17.0.3:1338
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:Received request: http://localhost:1338/error/internal/errorCode/13
+INFO:app:Rendered template: 13
+INFO:app:Command executed: 13
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 11:11:19] "GET /error/internal/errorCode/13 HTTP/1.1" 200 -
+INFO:app:Received request: http://localhost:1338/error/internal/errorCode/{{7*7}}
+INFO:app:Rendered template: 49
+INFO:app:Command executed: 49
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 11:11:25] "GET /error/internal/errorCode/{{7*7}} HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 11:40:48] "[33mGET /error/internal/errorCode/ HTTP/1.0[0m" 404 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 11:40:52] "[33mGET /error/internal/errorCode/ HTTP/1.0[0m" 404 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 11:40:53] "[33mGET /error/internal/errorCode/ HTTP/1.0[0m" 404 -
+INFO:app:Received request: http://insomnia.local/error/internal/errorCode/12
+INFO:app:Rendered template: 12
+INFO:app:Command executed: 12
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 11:40:56] "GET /error/internal/errorCode/12 HTTP/1.0" 200 -
+INFO:app:Received request: http://insomnia.local/error/internal/errorCode/12
+INFO:app:Rendered template: 12
+INFO:app:Command executed: 12
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:09:26] "GET /error/internal/errorCode/12 HTTP/1.0" 200 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:13:14] "[33mOPTIONS / HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:14:58] "[33mOPTIONS / HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:15:10] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:15:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/12
+INFO:app:Rendered template: 12
+INFO:app:Command executed: 12
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:15:23] "GET /error/internal/errorCode/12 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:16:15] "[33mOPTIONS /error/internal/errorCode=<errorCode>/404 HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:17:03] "[33mOPTIONS /error/internal/errorCode=<errorCode>/404 HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:19:13] "[32mOPTIONS /error/internal/errorCode//404 HTTP/1.1[0m" 308 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:19:38] "[32mGET /error/internal/errorCode//404' HTTP/1.1[0m" 308 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404'
+INFO:app:Rendered template: 404'
+INFO:app:Command executed: 404'
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:19:38] "GET /error/internal/errorCode/404' HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:19:41] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:19:50] "[32mOPTIONS /error/internal/errorCode//404 HTTP/1.1[0m" 308 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:20:02] "OPTIONS /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:22:21] "OPTIONS /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:38:17] "OPTIONS /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:38:20] "OPTIONS /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:38:28] "OPTIONS /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Attempting to delete config file...
+INFO:app:Config file removed successfully
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1338
+ * Running on http://172.17.0.3:1338
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:44:56] "OPTIONS /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:44:56] "[31m[1mPOST /error/internal/errorCode/404 HTTP/1.1[0m" 405 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:44:56] "[31m[1mPOST /error/internal/errorCode/404 HTTP/1.1[0m" 405 -
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:44:59] "[31m[1mPOST /error/internal/errorCode/404 HTTP/1.1[0m" 405 -
+INFO:app:Attempting to delete config file...
+INFO:app:Config file removed successfully
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1338
+ * Running on http://172.17.0.3:1338
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: OPTIONS
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:48:13] "OPTIONS /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: POST
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:48:13] "POST /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: OPTIONS
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:49:07] "OPTIONS /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: POST
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 12:49:07] "POST /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://insomnia.local/error/internal/errorCode/test
+INFO:app:Request method: GET
+INFO:app:Rendered template: test
+INFO:app:Command executed: test
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:00:31] "GET /error/internal/errorCode/test HTTP/1.0" 200 -
+INFO:app:Received request: http://insomnia.local/error/internal/errorCode/404
+INFO:app:Request method: POST
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:04:26] "POST /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://insomnia.local/error/internal/errorCode/404
+INFO:app:Request method: POST
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:05:16] "POST /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:05:53] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/12
+INFO:app:Request method: GET
+INFO:app:Rendered template: 12
+INFO:app:Command executed: 12
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:06:24] "GET /error/internal/errorCode/12 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:07:07] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:11:39] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: OPTIONS
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:11:50] "OPTIONS /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: POST
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:11:50] "POST /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:13:01] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:15:29] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:16:53] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:17:56] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:21:59] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/12
+INFO:app:Request method: GET
+INFO:app:Rendered template: 12
+INFO:app:Command executed: 12
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:23:15] "GET /error/internal/errorCode/12 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:29:34] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:30:29] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:30:29] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:31:57] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: POST
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:35:59] "POST /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: POST
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:40:34] "POST /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: POST
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:42:49] "POST /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: POST
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:46:07] "POST /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: POST
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:47:08] "POST /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: POST
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:48:42] "POST /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: POST
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:51:08] "POST /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: POST
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:52:22] "POST /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 13:52:28] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: POST
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 14:02:12] "POST /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 14:02:16] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: 404
+INFO:app:Command executed: 404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 14:02:45] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Attempting to delete config file...
+INFO:app:Config file removed successfully
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1338
+ * Running on http://172.17.0.3:1338
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/12
+INFO:app:Request method: GET
+INFO:app:Rendered template: You are seeing the response of: insomnia.local/error/internal/errorCode/12
+12
+INFO:app:Command executed: You are seeing the response of: insomnia.local/error/internal/errorCode/12
+12
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 14:08:56] "GET /error/internal/errorCode/12 HTTP/1.1" 200 -
+INFO:app:Received request: http://insomnia.local/error/internal/errorCode/12
+INFO:app:Request method: GET
+INFO:app:Rendered template: You are seeing the response of: insomnia.local/error/internal/errorCode/12
+12
+INFO:app:Command executed: You are seeing the response of: insomnia.local/error/internal/errorCode/12
+12
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 14:09:05] "GET /error/internal/errorCode/12 HTTP/1.0" 200 -
+INFO:app:Received request: http://insomnia.local/error/internal/errorCode/{{7*7}}
+INFO:app:Request method: GET
+INFO:app:Rendered template: You are seeing the response of: insomnia.local/error/internal/errorCode/49
+49
+INFO:app:Command executed: You are seeing the response of: insomnia.local/error/internal/errorCode/49
+49
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 14:09:16] "GET /error/internal/errorCode/{{7*7}} HTTP/1.0" 200 -
+INFO:app:Attempting to delete config file...
+INFO:app:Config file removed successfully
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1338
+ * Running on http://172.17.0.3:1338
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:Received request: http://127.0.0.1:1338/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: You are seeing the response of: insomnia.local/error/internal/errorCode/404
+404
+INFO:app:Command executed: You are seeing the response of: insomnia.local/error/internal/errorCode/404
+404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 14:36:07] "GET /error/internal/errorCode/404 HTTP/1.1" 200 -
+INFO:app:Received request: http://insomnia.local/error/internal/errorCode/404
+INFO:app:Request method: GET
+INFO:app:Rendered template: You are seeing the response of: insomnia.local/error/internal/errorCode/404
+404
+INFO:app:Command executed: You are seeing the response of: insomnia.local/error/internal/errorCode/404
+404
+INFO:app:Command output: 
+INFO:werkzeug:172.17.0.1 - - [15/Jun/2024 14:36:17] "GET /error/internal/errorCode/404 HTTP/1.0" 200 -

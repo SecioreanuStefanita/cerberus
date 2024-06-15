@@ -2,6 +2,7 @@ from ..utils.RequestComponentEnum import RequestComponent
 from ..crawler_utils.CrawlerOptions import CrawlerOptions
 import asyncio
 import msgpack
+import ast
 from .CacheService import CacheService
 class CheckerService:
     @staticmethod
@@ -33,13 +34,21 @@ class CheckerService:
 
     @staticmethod
     async def check_component(component_type, component_data, payloads_json):
-        async def check_payloads(option):
-            for payload in payloads_json[option]:
-                if payload in component_data:
-                    return False
-            return True
+        async def check_payloads(option, component_data, component_type):
+            if component_type == RequestComponent.HEADERS.name:
+                header_dict = ast.literal_eval(component_data.replace("Headers", ""))
+                for key, header in header_dict.items():
+                    for payload in payloads_json[option.name]:
+                        if payload != '' and payload != 'like' and payload !='icat' and payload != '*/*' and len(payload)>2 and payload in header:
+                            return False
+                return True
+            else:
+                for payload in payloads_json[option.name]:
+                    if payload != '' and payload!='query' and payload!='pass' and payload!= 'password' and payload !='/style.css' and len(payload)>2 and payload in component_data:
+                        return False
+                return True
 
-        tasks = [check_payloads(option) for option in CrawlerOptions]
+        tasks = [check_payloads(option, component_data, component_type) for option in CrawlerOptions]
         results = await asyncio.gather(*tasks)
         is_safe = all(results)
         return (component_type, is_safe, component_data)
