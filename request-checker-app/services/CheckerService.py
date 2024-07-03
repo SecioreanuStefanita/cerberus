@@ -1,8 +1,10 @@
 from ..utils.RequestComponentEnum import RequestComponent
 from ..crawler_utils.CrawlerOptions import CrawlerOptions
+from ..crawler_utils.CrawlerService import CrawlerService
 import asyncio
 import msgpack
 import ast
+import re
 from .CacheService import CacheService
 class CheckerService:
     @staticmethod
@@ -39,12 +41,12 @@ class CheckerService:
                 header_dict = ast.literal_eval(component_data.replace("Headers", ""))
                 for key, header in header_dict.items():
                     for payload in payloads_json[option.name]:
-                        if payload != '' and payload != 'like' and payload !='icat' and payload != '*/*' and len(payload)>2 and payload in header:
+                        if await CrawlerService.check_payload(payload,header):
                             return False
                 return True
             else:
                 for payload in payloads_json[option.name]:
-                    if payload != '' and payload!='query' and payload!='pass' and payload!= 'password' and payload !='/style.css' and len(payload)>2 and payload in component_data:
+                    if await CrawlerService.check_payload(payload, component_data):
                         return False
                 return True
 
